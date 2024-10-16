@@ -1,31 +1,31 @@
-import random
+while True:
 
-item_list = ["Rock", "paper", "Scissor"]
+    import random
 
-user_choice = input("Enter your move = Rock, Paper, Scissor= ")
-comp_choice = random.choice(item_list)
+    item_list = ["Rock", "paper", "Scissor"]
 
-print(f"User choice = {user_choice}, Computer choice = {comp_choice}")
+    user_choice = input("Enter your move = Rock, Paper, Scissor= ")
+    comp_choice = random.choice(item_list)
 
-if user_choice == comp_choice:
-    print("Both chooses same: = Math Tie")
+    print(f"User choice = {user_choice}, Computer choice = {comp_choice}")
 
-elif user_choice == "Rock":
-    if comp_choice == "Paper":
-        print("Paper covers Rock = Computer Win")
-    else:
-        print("Rock smashes Scissor = You Win")
+    if user_choice == comp_choice:
+        print("Both chooses same: = Math Tie")
 
-elif user_choice == "Paper":
-    if comp_choice == "Scissor":
-        print("Scissor cuts paper, Computer Win ")
-    else:
-        print("Paper covers rock, You win")
+    elif user_choice == "Rock":
+        if comp_choice == "Paper":
+            print("Paper covers Rock = Computer Win")
+        else:
+            print("Rock smashes Scissor = You Win")
 
-elif user_choice == "Scissor":
-    if comp_choice == "Paper":
-        print("Scissor cuts paper, You win")
-    else:
-        print("ROCK smashes scissor, computer win")
+    elif user_choice == "Paper":
+        if comp_choice == "Scissor":
+            print("Scissor cuts paper, Computer Win ")
+        else:
+            print("Paper covers rock, You win")
 
-
+    elif user_choice == "Scissor":
+        if comp_choice == "Paper":
+            print("Scissor cuts paper, You win")
+        else:
+            print("ROCK smashes scissor, computer win")
